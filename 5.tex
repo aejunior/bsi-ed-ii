@@ -10,6 +10,7 @@
 \usepackage{amssymb}
 \usepackage{fontawesome}
 \usepackage{pythonhighlight}
+\usepackage{hyperref}
 
 \renewcommand{\thesubsection}{\thesection.\alph{subsection}}
 \newcommand{\quotes}[1]{``#1''}
@@ -390,6 +391,8 @@ class Vertex:
         self.data = data
     
 \end{python}
+\href{https://github.com/aejunior/bsi-ed-ii/blob/master/src/graph/Vertex.py}{\faGithub}
+
 \section{} % 8
 \begin{python}
 class Edge:
@@ -400,6 +403,8 @@ class Edge:
         self.weight = weight
         self.data = data
 \end{python}
+\href{https://github.com/aejunior/bsi-ed-ii/blob/master/src/graph/Edge.py}{\faGithub}
+
 \section{} % 9
 \begin{python}
 from .Graph import Graph
@@ -474,6 +479,8 @@ class AdjacencyListGraph(Graph):
                 adjacent_vertices.append(edge.target)
             return adjacent_vertices
 \end{python}
+\href{https://github.com/aejunior/bsi-ed-ii/blob/master/src/graph/alg.py}{\faGithub}
+
 \section{} % 10
 \begin{python}
 from .Graph import Graph
@@ -550,4 +557,6 @@ class AdjacencyMatrixGraph(Graph):
                 adjacent_vertices.append(i)
         return adjacent_vertices
 \end{python}
+\href{https://github.com/aejunior/bsi-ed-ii/blob/master/src/graph/amg.py}{\faGithub}
+
 \end{document}

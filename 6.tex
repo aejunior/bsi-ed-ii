@@ -9,6 +9,7 @@
 \usepackage{subcaption}
 \usepackage{fontawesome}
 \usepackage{pythonhighlight}
+\usepackage{hyperref}
 % \usetikzlibrary{automata,arrows,positioning,calc}
 
 \renewcommand{\thesubsection}{\thesection.\alph{subsection}}
@@ -871,6 +872,7 @@ def bfs(grafo: dict, fonte: str, alvo: str) -> list:
 
     return caminho
 \end{python}
+\href{https://github.com/aejunior/bsi-ed-ii/blob/master/src/search/bfs.py}{\faGithub}
 
 \section{} % 9
 \begin{python}
@@ -887,4 +889,6 @@ def dfs(grafo: dict, inicio: str, alvo: str):
             pilha.extend(set(grafo[vertice]) - set(visitado)) 
     return []  # Se nao encontra, retorna lista vazia
 \end{python}
+\href{https://github.com/aejunior/bsi-ed-ii/blob/master/src/search/dfs.py}{\faGithub}
+
 \end{document}
